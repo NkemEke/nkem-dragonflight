@@ -1,0 +1,1 @@
+Dr. Nkem Dragonflight: interactive competency mapping preview. Open index.html in a browser. Six evidence-based competency domains and all twelve course illustrations included. All videos and course pages remain included.
