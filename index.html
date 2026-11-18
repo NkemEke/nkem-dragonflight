@@ -50,6 +50,48 @@
 @media(prefers-reduced-motion:reduce){.scene video{display:none !important}}
 </style><style>.brand{display:flex;align-items:center;gap:10px;min-width:0}.brand-avatar{width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid #d7b66b;flex:none}.brand span{min-width:0}@media(max-width:620px){.brand-avatar{width:30px;height:30px}.brand{gap:6px}}</style><style>
 html,body{max-width:100%;overflow-x:clip}img,video,iframe{max-width:100%}.course-text-panel{min-width:0;overflow-wrap:anywhere}.course-source-tabs{max-width:100%;overflow-x:auto}.assignment-list{display:grid;gap:13px}.assignment-link{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:17px 20px;border-radius:14px;background:#edf4eb;color:#1d3f2b;text-decoration:none;border:1px solid #b8cbb8}.assignment-link:hover,.assignment-link:focus-visible{background:#dfece0;border-color:#3b7450}.assignment-link strong{flex:1 1 230px}.assignment-kind{font-size:11px;letter-spacing:.12em;font-weight:800;color:#47684d}.assignment-action{font-size:13px;text-decoration:underline}.nkem-credits{background:#061b13;color:#e5eee4;padding:48px max(22px,calc((100vw - 960px)/2));font-size:14px;line-height:1.7}.nkem-credits h2{font-size:clamp(1.9rem,4vw,2.8rem)}.nkem-credits p{margin:10px 0}@media(max-width:720px){.topbar{flex-wrap:wrap;gap:8px}.nav{flex-wrap:wrap;justify-content:center}.nav button{min-height:38px}.scene-content{width:100%;max-width:100%;padding:115px 22px 70px}.scene h1{font-size:clamp(2.5rem,12vw,4.5rem)}.course-grid{grid-template-columns:1fr}.course-hero h1{font-size:clamp(2.8rem,12vw,5rem)}.course-top{flex-wrap:wrap}.course-page{width:100vw}.course-source-tabs{display:flex;overflow-x:auto;flex-wrap:nowrap!important;scrollbar-width:thin}.course-source-tabs button{flex:0 0 auto;max-width:85vw;white-space:normal}.story-dots{display:none}.section{padding:65px 18px}}@media(max-width:380px){.brand{font-size:.75rem}.nav button{padding:7px;font-size:.68rem}}
+</style><style>
+/* Quiet, expandable production acknowledgments after the entire journey. */
+.nkem-credits{padding:14px max(22px,calc((100vw - 960px)/2)) 24px!important;background:#061b13!important;color:#c9d9cc!important;font-size:12px!important;line-height:1.6!important}
+.nkem-credits details{border-top:1px solid rgba(224,239,222,.2)}
+.nkem-credits summary{cursor:pointer;list-style:none;padding:14px 0;color:#cbd7ca;font-size:12px;letter-spacing:.11em;text-transform:uppercase}
+.nkem-credits summary::-webkit-details-marker{display:none}
+.nkem-credits summary span{float:right;font-size:16px}
+.nkem-credits .credits-body{padding:6px 0 18px;max-width:720px}
+.nkem-credits .credits-body p{margin:7px 0}
+</style><style id="nkem-final-responsive">
+/* Accessible layouts for mobile, tablet, laptop, and desktop. */
+html{overflow-x:hidden}body{max-width:100%;overflow-x:hidden}
+img,video,iframe,object{max-width:100%}
+button,a,summary{-webkit-tap-highlight-color:transparent}
+button,summary{touch-action:manipulation}
+:focus-visible{outline:3px solid #eac678;outline-offset:3px}
+.assignment-frame{display:block;width:100%;height:min(72vh,850px);min-height:360px;border:1px solid rgba(200,220,205,.28);border-radius:12px;background:#fff}
+.assignment-video{display:block;width:100%;height:auto;max-height:75vh;border-radius:12px;background:#000}
+.assignment-list{max-width:100%}
+.assignment-select{max-width:100%;overflow-wrap:anywhere}
+.nkem-credits summary{min-height:44px;display:block}
+.nkem-credits .credits-body{font-size:clamp(12px,1.5vw,14px)}
+.nkem-credits .credits-body p{margin:0 0 16px}
+@media(max-width:760px){
+ .topbar{max-width:100vw}
+ .nav{max-width:100%;overflow-x:auto}
+ .scene{min-height:100svh}
+ .scene-content{max-width:100%;box-sizing:border-box}
+ .course-page,.course-top,.course-tab-text{max-width:100vw;box-sizing:border-box}
+ .course-source-tabs{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+ .assignment-frame{height:66svh;min-height:320px}
+ .nkem-credits{padding-left:18px!important;padding-right:18px!important}
+}
+@media(max-width:430px){
+ .scene h1{overflow-wrap:break-word}
+ .assignment-frame{height:62svh;min-height:290px}
+ .assignment-list button{width:100%}
+}
+@media(prefers-reduced-motion:reduce){
+ html:focus-within{scroll-behavior:auto}
+ .scene video{animation:none}
+}
 </style></head><body><header class="topbar"><div class="brand"><img class="brand-avatar" src="nkem_brand_portrait.webp" alt="" width="38" height="38"/> <span>Dr. Nkem's Master of Education Journey</span></div><nav class="nav"><button onclick="go('scene1')">The Story</button><button onclick="openIntroduction()">Introduction</button><button onclick="go('courses')">Courses</button><button onclick="go('competency-map')">Competencies</button><button onclick="go('summit')">Transformation</button></nav></header><div aria-label="Chapter navigation" class="story-dots"><button aria-label="Chapter 1" onclick="go('scene1')"></button><button aria-label="Chapter 2" onclick="go('scene2')"></button><button aria-label="Chapter 3" onclick="go('scene3')"></button><button aria-label="Chapter 4" onclick="go('scene4')"></button><button aria-label="Chapter 5" onclick="go('scene5')"></button><button aria-label="Courses" onclick="go('courses')"></button></div>
 <section class="scene" id="scene1"><img alt="Edmonton skyline at sunrise" class="poster" src="poster1.jpg"/><video autoplay="" loop="" muted="" playsinline="" poster="poster1.jpg" preload="metadata"><source src="chapter1.mp4" type="video/mp4"/></video><div class="scene-content"><div class="eyebrow">Chapter One · Edmonton, Alberta</div><h1>The Journey<br/>Begins</h1><p>My name is Nkemakolam Eke and I am from Edmonton, Alberta.</p><p>I have always strived for excellence and felt that I might need to do additional learning to ensure I am giving the best learning experience to my medical students and resident doctors.</p><button class="btn" onclick="openIntroduction()">Read My Introduction</button> <button class="btn" onclick="go('scene2')">Continue the Flight →</button></div><div class="scene-foot">01 / 05 · Opening film</div></section>
 <dialog id="original-introduction" class="intro-dialog" aria-label="Nkem's original introduction"><div class="intro-dialog-header"><div><h2>Introduction</h2></div><button class="intro-close" type="button" onclick="closeIntroduction()" aria-label="Close introduction">✕</button></div><div class="intro-dialog-scroll"><div class="nkem-narration" role="group" aria-label="Optional introduction narration">
@@ -212,6 +254,14 @@ narration.addEventListener('ended',finish);
 narration.addEventListener('pause',()=>{if(narration.ended)return;finish()});
 dialog.addEventListener('close',()=>{if(!narration.paused)narration.pause();narration.currentTime=0});
 })();
-</script><section class="nkem-credits" aria-labelledby="credits-heading"><h2 id="credits-heading">AI Tools &amp; Creative Credits</h2><p><strong>Google Gemini:</strong> Custom music generation, cinematic animations, and creative development.</p><p><strong>Google Flow:</strong> Cinematic animations and visual storytelling.</p><p><strong>ElevenLabs:</strong> AI-generated narration using the <em>Victor Hopo – Deep and Warm</em> voice.</p><p><strong>ChatGPT (OpenAI):</strong> Website design, coding, content organization, and multimedia integration.</p><p><strong>Background Music:</strong> <em>The Sun-Drenched Ascent</em>, a custom AI-generated composition created using Google's AI tools.</p><p><strong>Academic Integrity:</strong> Dr. Nkem's academic reflections and personal experiences remain his own. AI tools supported the creative and technical presentation of his work.</p><p><strong>Copyright:</strong> Use of AI-generated content is subject to the applicable service terms.</p></section>
+</script><footer class="nkem-credits" aria-labelledby="credits-heading">
+<details><summary id="credits-heading">AI Production Credits <span aria-hidden="true">＋</span></summary>
+<div class="credits-body">
+<p><strong>Creative Direction and Website Production</strong><br>Concept development, website design, coding, and multimedia integration supported by ChatGPT (OpenAI).</p>
+<p><strong>Cinematic Visuals and Animation</strong><br>AI-assisted visual creation using Google Gemini and Google Flow.</p>
+<p><strong>Voice Narration</strong><br>AI-generated narration produced using ElevenLabs, featuring the <em>Victor Hopo, Deep and Warm</em> voice.</p>
+<p><strong>Original Soundtrack</strong><br><em>The Sun-Drenched Ascent</em>, an AI-generated musical composition created for this digital portfolio using Google's AI tools.</p>
+<p><strong>Academic Authorship and Integrity</strong><br>All academic reflections, assignments, professional experiences, and personal perspectives presented in this portfolio are the original work of Dr. Nkem. Artificial intelligence tools were used to support the creative, audiovisual, and technical presentation of the portfolio.</p>
+</div></details></footer>
 
 </body></html>
